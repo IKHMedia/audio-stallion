@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IKHMedia Player</title>
+<meta name="title" content="IKHMedia Player" />
+<meta name="description" content="Listen Live To IKHMedia Family of Stations" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ikhmedia.com/Player/" />
+<meta property="og:title" content="IKHMedia Player" />
+<meta property="og:description" content="Listen Live To IKHMedia Family of Stations" />
+<meta property="og:image" content="https://ikhmedia.com/wp-content/uploads/IKHMediaFinalLogo.webp" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://ikhmedia.com/Player/" />
+<meta property="twitter:title" content="IKHMedia Player" />
+<meta property="twitter:description" content="Listen Live To IKHMedia Family of Stations" />
+<meta property="twitter:image" content="https://ikhmedia.com/wp-content/uploads/IKHMediaFinalLogo.webp" />
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jplayer@2.9.2/dist/skin/pink.flag/css/jplayer.pink.flag.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jplayer/dist/add-on/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+	    		{
+		title:"Z100 - 100.3 FM",
+			mp3:"https://studio.ikhmedia.com/listen/z100/stream",
+		},
+		{
+		title:"My100 - 100.7 FM",
+			mp3:"https://studio.ikhmedia.com/listen/my100/stream",
+		},
+
+		{
+			title:"Country 92.9 FM",
+			mp3:"https://studio.ikhmedia.com/listen/wiws/stream",
+		},
+
+		{
+			title:"98.7 Rocks! (In Stereo)",
+			mp3:"https://studio.ikhmedia.com/listen/wor/stream",
+		},
+		{
+			title:"93.1 DRQ",
+			mp3:"https://studio.ikhmedia.com/listen/931drq/stream",
+		},
+		{
+			title:"Fonz FM",
+			mp3:"https://studio.ikhmedia.com/listen/fonzfm/stream",
+		},
+		{
+			title:"Z107 Online",
+			mp3:"https://studio.ikhmedia.com/listen/z107/stream",
+		},
+		{
+			title:"Mix 107.3",
+			mp3:"https://studio.ikhmedia.com/listen/mix1073/stream",
+		}
+	], {
+		swfPath: "https://cdn.jsdelivr.net/npm/jplayer/dist/jplayer/jquery.jplayer.swf",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<center>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div class="jp-gui jp-interface">
+			<div class="jp-volume-controls">
+				<button class="jp-mute" role="button" tabindex="0">mute</button>
+				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+			<div class="jp-controls-holder">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-stop" role="button" tabindex="0">stop</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+			<ul>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+</center>
+</body>
+
+</html>
